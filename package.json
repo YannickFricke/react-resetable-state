@@ -5,6 +5,8 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w",
+    "format:check": "prettier --check ./src",
+    "format:write": "prettier --write ./src",
     "test": "jest",
     "test:watch": "jest --watch"
   },
