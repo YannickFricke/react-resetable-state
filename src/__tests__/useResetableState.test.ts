@@ -4,13 +4,17 @@ import { SetStateAction } from 'react';
 
 describe('useResetableState', () => {
     it('should return the initial state', () => {
-        const {result: {current: [state]}} = renderHook(() => useResetableState(0));
+        const {
+            result: {
+                current: [state],
+            },
+        } = renderHook(() => useResetableState(0));
 
         expect(state).toBe(0);
     });
 
     it('should reset the state', () => {
-        const {result} = renderHook(() => useResetableState(0));
+        const { result } = renderHook(() => useResetableState(0));
 
         const [, resetState, setState] = result.current;
 
@@ -29,7 +33,11 @@ describe('useResetableState', () => {
         expect(getCurrentState(result)).toBe(0);
     });
 
-    const getCurrentState = (result: HookResult<[number, () => void, React.Dispatch<SetStateAction<number>>]>) => {
+    const getCurrentState = (
+        result: HookResult<
+            [number, () => void, React.Dispatch<SetStateAction<number>>]
+        >
+    ) => {
         return result.current[0];
-    }
+    };
 });
