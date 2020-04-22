@@ -1,3 +1,5 @@
+## This repository is deprecated! Use https://github.com/YannickFricke/react-resettable-state instead for further updates!
+
 # React resetable state
 
 ## About the project
