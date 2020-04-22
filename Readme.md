@@ -37,14 +37,6 @@ const App = () => {
 };
 ```
 
-## Examples
-
-Here are some examples which are written in TypeScript.
-If you want to use JavaScript instead, look in the section above.
-
-- [Counter](https://codesandbox.io/s/react-resetable-state-counter-example-knun5?file=/src/App.tsx)
-- [Form data](https://codesandbox.io/s/react-resetable-state-form-example-sk1dw)
-
 ## Typings?
 
 Since this package is written in TypeScript it also ships with type definitions!
